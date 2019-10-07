@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"sass/style.scss",
+		"sass/_design.scss",
+		"sass/_typography.scss",
+		"sass/_palette.scss",
+		"sass/_site-specific.scss"
+	],
+	"sourcesContent": [
+		"/*\nTheme Name: Bill O' Jacks\nTheme URI: http://wordpress.org/themes/billojacks\nAuthor: Fuzzy Duck (Rhys)\nAuthor URI: http://wordpress.org/\nDescription: Bill O' Jacks\nVersion: 1.0\n*/\n\n@import '_design';\n@import '_typography';\n@import '_palette';\n@import '_site-specific';",
+		"// Palette\n\n$black: #000;\n\n\nbody {\n    background: $black;\n}",
+		"",
+		"\n",
+		""
+	],
+	"names": [],
+	"mappings": "AAAA;;;;;;;EAOE;;ACFF,AAAA,IAAI,CAAC;EACD,UAAU,EAJN,IAAI,GAKX"
+}
