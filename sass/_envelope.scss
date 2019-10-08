@@ -1,0 +1,73 @@
+#envelope {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: url(/boj/wp-content/themes/billojacks/img/assets/Backgrounds/Bluebg.jpg) no-repeat center center;
+    position: relative;
+    .card {
+        margin: auto;
+        width: 320px;
+        height: 500px;
+        .card-bg {
+            background: url(/boj/wp-content/themes/billojacks/img/assets/Artwork/Envelope.jpg) no-repeat center center;
+            background-size: contain;
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+            .inner {
+                display: grid;
+                grid-template-rows: 80px 1fr; 
+                padding-top: 120px;
+                align-items: center;
+                justify-content: center;
+                h1 {
+                    text-decoration: underline;
+                    grid-row: 1;
+                    font-family: YWFT-Neighborhood;
+                    letter-spacing: 0.3em;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                table {
+                    grid-row: 2;
+                    text-align: left;
+                    border-collapse: collapse;
+                    border: 1px solid $black;
+                    td {
+                        border: 1px solid $black;
+                        padding: 2px 4px;
+                    }
+                    tr {
+                        line-height: 1.5em;
+                        font-family: SeaweedScript-Regular;
+                        th {
+                            font-family: YWFT-Neighborhood;
+                            padding: 2px 4px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .elope {
+        display: grid;
+        grid-template-rows: 50px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 87%;
+        h3 {
+            font-family: YWFT-Neighborhood;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .down {
+            background: url(/boj/wp-content/themes/billojacks/img/assets/Vectors/down-arrow.svg) no-repeat center center;
+            height: 10px;
+            background-size: contain;
+            object-fit: contain;
+        }
+    }
+}
