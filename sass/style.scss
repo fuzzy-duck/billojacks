@@ -7,7 +7,16 @@ Description: Bill O' Jacks
 Version: 1.0
 */
 
+/*
+Global
+*/
 @import '_design';
 @import '_typography';
 @import '_palette';
 @import '_site-specific';
+
+/*
+Pages
+*/
+@import '_intro';
+@import '_envelope';
