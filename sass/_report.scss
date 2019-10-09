@@ -1,0 +1,48 @@
+#report {
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    width: 100vw;
+    background: url(/boj/wp-content/themes/billojacks/img/assets/Backgrounds/Bluebg.jpg) no-repeat center center;
+
+    .card {
+        margin: auto;
+        width: 320px;
+        height: 500px;
+        .card-bg {
+            background: url(/boj/wp-content/themes/billojacks/img/assets/Artwork/ReportBgMobile_03.jpg) no-repeat center center;
+            background-size: contain;
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+            overflow: scroll;
+            //padding: 50px 0px;
+
+            .content {
+                display: grid;
+                grid-template-rows: 60px 1fr;
+                padding: 30px;
+                font-family: goudy_bookletter_1911;
+
+                .title {
+                    grid-row: 1;
+                    
+                    h1 {
+                        text-align: left;
+                        font-size: 20px;
+                        margin: 0;
+                    }
+                    h3 {
+                        text-align: left;
+                        color: $gold;
+                        margin: 0;
+                    }
+                }
+
+                .body-para {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

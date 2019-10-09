@@ -9,10 +9,15 @@ Version: 1.0
 /*
 Global
 */
-/* line 10, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_design.scss */
+/* line 12, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_design.scss */
 body {
   margin: 0;
   padding: 0; }
+
+/* line 17, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_design.scss */
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  text-align: center; }
 
 @font-face {
   font-family: goudy_bookletter_1911;
@@ -30,6 +35,35 @@ body {
   font-family: YWFT-Trithart-1;
   font-weight: bold;
   src: url("fonts/YWFT-Trithart-1.WOFF") format("opentype"); }
+
+/* line 1, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_nav.scss */
+nav {
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: calc(1em + 1vw);
+  align-items: center;
+  justify-content: center; }
+  /* line 8, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_nav.scss */
+  nav .hamburger {
+    background: url(/boj/wp-content/themes/billojacks/img/assets/Vectors/burger-menu.svg) no-repeat center center;
+    background-size: contain;
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+    margin: auto; }
+  /* line 16, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_nav.scss */
+  nav .back {
+    background: url(/boj/wp-content/themes/billojacks/img/assets/Vectors/back.svg) no-repeat center center;
+    background-size: contain;
+    object-fit: contain;
+    height: 15px; }
+  /* line 22, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_nav.scss */
+  nav .pg-num {
+    background: url(/boj/wp-content/themes/billojacks/img/assets/Vectors/number-02.svg) no-repeat center center;
+    background-size: contain;
+    object-fit: contain;
+    height: 15px; }
 
 /*
 Pages
@@ -120,28 +154,26 @@ Pages
           text-decoration: underline;
           grid-row: 1;
           font-family: YWFT-Neighborhood;
-          letter-spacing: 0.3em;
-          text-align: center;
-          text-transform: uppercase; }
-        /* line 33, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
+          letter-spacing: 0.3em; }
+        /* line 31, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
         #envelope .card .card-bg .inner table {
           grid-row: 2;
           text-align: left;
           border-collapse: collapse;
           border: 1px solid #000; }
-          /* line 38, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
+          /* line 36, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
           #envelope .card .card-bg .inner table td {
             border: 1px solid #000;
             padding: 2px 4px; }
-          /* line 42, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
+          /* line 40, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
           #envelope .card .card-bg .inner table tr {
             line-height: 1.5em;
             font-family: SeaweedScript-Regular; }
-            /* line 45, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
+            /* line 43, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
             #envelope .card .card-bg .inner table tr th {
               font-family: YWFT-Neighborhood;
               padding: 2px 4px; }
-  /* line 54, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
+  /* line 52, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
   #envelope .elope {
     display: grid;
     grid-template-rows: 50px;
@@ -149,16 +181,218 @@ Pages
     justify-content: center;
     position: absolute;
     top: 87%; }
-    /* line 61, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
+    /* line 59, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
     #envelope .elope h3 {
       font-family: YWFT-Neighborhood;
       text-transform: uppercase;
       font-weight: 700; }
-    /* line 66, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
+    /* line 64, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_envelope.scss */
     #envelope .elope .down {
       background: url(/boj/wp-content/themes/billojacks/img/assets/Vectors/down-arrow.svg) no-repeat center center;
       height: 10px;
       background-size: contain;
       object-fit: contain; }
+
+/* line 1, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+#notebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url(/boj/wp-content/themes/billojacks/img/assets/Backgrounds/Bluebg.jpg) no-repeat center center;
+  position: relative; }
+  /* line 9, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+  #notebook .nbook {
+    position: absolute;
+    top: 10%; }
+    /* line 12, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+    #notebook .nbook .up {
+      transform: rotate(180deg);
+      height: 10px;
+      background-size: contain;
+      object-fit: contain;
+      background: url(/boj/wp-content/themes/billojacks/img/assets/Vectors/down-arrow.svg) no-repeat center center; }
+  /* line 20, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+  #notebook .card {
+    margin: auto;
+    width: 320px;
+    height: 500px;
+    margin-top: 150px;
+    position: relative; }
+    /* line 26, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+    #notebook .card .card-bg {
+      background: url(/boj/wp-content/themes/billojacks/img/assets/Artwork/NotesCover.jpg) no-repeat center center;
+      background-size: contain;
+      object-fit: contain;
+      height: 100%;
+      width: 100%; }
+    /* line 33, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+    #notebook .card .notes-title {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-bottom: 1px solid #000;
+      margin: auto;
+      background: url(/boj/wp-content/themes/billojacks/img/assets/PNGs/NotesTitle.png) no-repeat center center;
+      background-size: contain;
+      object-fit: contain;
+      width: 50%;
+      height: 50px; }
+    /* line 46, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+    #notebook .card h3 {
+      color: #fff;
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: YWFT-Neighborhood; }
+
+/* line 59, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+#clues {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url(/boj/wp-content/themes/billojacks/img/assets/Backgrounds/Bluebg.jpg) no-repeat center center;
+  position: relative; }
+  /* line 67, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+  #clues .card {
+    margin: auto;
+    width: 320px;
+    height: 500px;
+    margin-top: 150px;
+    position: relative; }
+    /* line 73, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+    #clues .card .notebook-inner {
+      background: url(/boj/wp-content/themes/billojacks/img/assets/Artwork/SuspectBg.jpg) no-repeat center center;
+      background-size: contain;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center; }
+      /* line 83, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+      #clues .card .notebook-inner h3 {
+        align-items: center;
+        justify-content: center;
+        padding: calc(1em + 1vw);
+        font-family: goudy_bookletter_1911; }
+        /* line 88, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_notebook.scss */
+        #clues .card .notebook-inner h3 span {
+          border-bottom: 1px solid #ff6473; }
+
+/* line 1, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_news-intro.scss */
+#news-intro {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url(/boj/wp-content/themes/billojacks/img/assets/Backgrounds/Bluebg.jpg) no-repeat center center;
+  padding: calc(1em + 1vw) 0px; }
+  /* line 8, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_news-intro.scss */
+  #news-intro .card {
+    margin: auto;
+    width: 320px;
+    height: 500px;
+    font-family: goudy_bookletter_1911;
+    text-align: justify;
+    padding: calc(1em + 1vw);
+    font-size: 12px; }
+    /* line 16, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_news-intro.scss */
+    #news-intro .card .card-bg {
+      background: url(/boj/wp-content/themes/billojacks/img/assets/Artwork/Newspaper1.jpg) no-repeat center center;
+      background-size: contain;
+      object-fit: contain;
+      height: 100%;
+      width: 100%; }
+      /* line 22, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_news-intro.scss */
+      #news-intro .card .card-bg .upper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: calc(1em + 1vw);
+        padding-bottom: 0px;
+        text-align: justify;
+        text-transform: uppercase;
+        font-size: 11px; }
+        /* line 32, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_news-intro.scss */
+        #news-intro .card .card-bg .upper p:nth-child(1) {
+          grid-column: 1/2; }
+        /* line 35, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_news-intro.scss */
+        #news-intro .card .card-bg .upper p:nth-child(2) {
+          grid-column: 2/2;
+          text-align: right; }
+      /* line 42, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_news-intro.scss */
+      #news-intro .card .card-bg .lower {
+        padding-top: 0px;
+        text-align: justify;
+        padding: 20px;
+        padding-top: 0px; }
+        /* line 48, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_news-intro.scss */
+        #news-intro .card .card-bg .lower .lead {
+          text-align: center;
+          font-size: 18px;
+          text-transform: uppercase;
+          letter-spacing: 0.3em;
+          font-weight: 900; }
+  /* line 58, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_news-intro.scss */
+  #news-intro h3 {
+    text-align: center;
+    color: #000; }
+
+/* line 1, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_report.scss */
+#report {
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  width: 100vw;
+  background: url(/boj/wp-content/themes/billojacks/img/assets/Backgrounds/Bluebg.jpg) no-repeat center center; }
+  /* line 8, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_report.scss */
+  #report .card {
+    margin: auto;
+    width: 320px;
+    height: 500px; }
+    /* line 12, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_report.scss */
+    #report .card .card-bg {
+      background: url(/boj/wp-content/themes/billojacks/img/assets/Artwork/ReportBgMobile_03.jpg) no-repeat center center;
+      background-size: contain;
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+      overflow: scroll; }
+      /* line 21, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_report.scss */
+      #report .card .card-bg .content {
+        display: grid;
+        grid-template-rows: 60px 1fr;
+        padding: 30px;
+        font-family: goudy_bookletter_1911; }
+        /* line 27, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_report.scss */
+        #report .card .card-bg .content .title {
+          grid-row: 1; }
+          /* line 30, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_report.scss */
+          #report .card .card-bg .content .title h1 {
+            text-align: left;
+            font-size: 20px;
+            margin: 0; }
+          /* line 35, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_report.scss */
+          #report .card .card-bg .content .title h3 {
+            text-align: left;
+            color: #d9a756;
+            margin: 0; }
+        /* line 42, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_report.scss */
+        #report .card .card-bg .content .body-para {
+          font-size: 14px; }
+
+/* line 1, ../../../../../Users/rhys/Desktop/htdocs/boj/wp-content/themes/billojacks/sass/_crime-scene.scss */
+#crime-scene {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url(/boj/wp-content/themes/billojacks/img/assets/Backgrounds/Bluebg.jpg) no-repeat center center; }
 
 /*# sourceMappingURL=style.css.map */

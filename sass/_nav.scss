@@ -1,0 +1,28 @@
+nav {
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: $responsivePadding;
+    align-items: center;
+    justify-content: center;
+    .hamburger {
+        background: url(/boj/wp-content/themes/billojacks/img/assets/Vectors/burger-menu.svg) no-repeat center center;
+        background-size: contain;
+        object-fit: contain;
+        height: 40px;
+        width: 40px;
+        margin: auto;
+    }
+    .back {
+        background: url(/boj/wp-content/themes/billojacks/img/assets/Vectors/back.svg) no-repeat center center;
+        background-size: contain;
+        object-fit: contain;
+        height: 15px;
+    }
+    .pg-num {
+        background: url(/boj/wp-content/themes/billojacks/img/assets/Vectors/number-02.svg) no-repeat center center;
+        background-size: contain;
+        object-fit: contain;
+        height: 15px;
+    }
+}

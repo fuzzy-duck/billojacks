@@ -1,6 +1,8 @@
 // Palette
 $black: #000;
 $white: #fff;
+$red: #ff6473;
+$gold: #d9a756;
 
 // Vars
 $responsivePadding: calc(1em + 1vw);
@@ -10,4 +12,9 @@ $desktopPadding: calc(2em + 1vw);
 body {
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    text-align: center;
 }
